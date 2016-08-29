@@ -8,8 +8,8 @@ conn %default
     dpdtimeout=300s
     rekey=no
     keyexchange=ikev2
-    ike=aes128gcm16-sha2_256-prfsha256-ecp256!
-    esp=aes128gcm16-sha2_256-ecp256!
+    ike=aes128gcm16-sha2_256-prfsha256-ecp256,aes128-sha2_256-prfsha256-modp1024!
+    esp=aes128gcm16-sha2_256-ecp256,aes128-sha2_256-modp1024!
     compress=yes
     fragmentation=yes
     
