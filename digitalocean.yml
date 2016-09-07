@@ -143,6 +143,7 @@
     - { role: security, when: security_enabled is defined and security_enabled == "y" }
     - { role: proxy, when: proxy_enabled is defined and proxy_enabled == "y" }
     - { role: dns_adblocking, when: dns_enabled is defined and dns_enabled == "y" }
+    - { role: upnp, when: miniupnpd_enabled is defined and miniupnpd_enabled == "y" }
     - { role: logging, when: auditd_enabled is defined and auditd_enabled == "y" }
     - { role: ssh_tunneling, when: ssh_tunneling_enabled is defined and ssh_tunneling_enabled == "y" }
     - vpn    
