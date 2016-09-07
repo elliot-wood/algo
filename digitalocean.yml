@@ -33,10 +33,10 @@
         2.  Amsterdam        (Datacenter 3)
         3.  Frankfurt
         4.  London
-        5.  New York         (Datacenter 1)
+        5.  New York         (Datacenter 1, block storage enabled)
         6.  New York         (Datacenter 2)
         7.  New York         (Datacenter 3)
-        8.  San Francisco    (Datacenter 1)
+        8.  San Francisco    (Datacenter 1, block storage enabled)
         9.  San Francisco    (Datacenter 2)
         10. Singapore
         11. Toronto
@@ -58,6 +58,11 @@
   - name: "proxy_enabled"
     prompt: "Do you want to install an HTTP proxy to block ads and decrease traffic usage while surfing? (y/n):\n"
     default: "y"
+    private: no
+
+  - name: "miniupnpd_enabled"
+    prompt: "Do you want to install a UPnP daemon to dynamically perform port-forwarding? (y/n):\n"
+    default: "n"
     private: no
 
   - name: "auditd_enabled"
